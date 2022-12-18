@@ -45,5 +45,6 @@ def Fibonacci(n):
 
 print(Fibonacci(10))     </pre>
 <hr>
+<big>span attribute will only take required space, as it is inline element, but div will take its own space where none can be situated near div attributed line, as it is block element example,</big>
 </body>
 </html>
