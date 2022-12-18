@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD MAP</title>
+</head>
+<body>
+    <h1>THIS IS WORLD MAP</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vel, nobis illum cupiditate corrupti tempora eligendi consequatur. Laborum blanditiis incidunt quas vitae doloribus voluptatum molestias atque, vero omnis odit voluptatibus sint eos animi sequi quae sapiente nulla ipsum dicta ducimus ea nihil deleniti quam possimus adipisci? Magnam aliquid aperiam dolorem culpa tempora tempore facilis quo iusto pariatur nostrum totam ea porro nobis esse eius ab enim officiis ullam dolor sunt magni, molestias labore itaque. Ut cumque eius magni nostrum. Enim, laborum. Labore veritatis ullam distinctio sapiente, nemo iste vitae officia harum debitis neque quibusdam possimus libero eius cum. Doloribus cum quaerat voluptatibus nisi asperiores libero nostrum voluptates, itaque qui, consequuntur voluptatem cupiditate vitae ipsa facere impedit assumenda suscipit ex eum dolores? At modi, amet impedit quidem totam eum nam, molestias, quae ipsa laboriosam molestiae similique iusto id dolorem aspernatur aperiam nisi? Rerum reiciendis consequatur ducimus eaque? Error nam ea officia!</p>
+    <P> ABOVE PARAGRAPH IS USED USING LOREN150 IN HTML</P>
+    <hr>
+    <!-- this only for menot for users  -->
+    <a href='www.google.com/'>refer it</a>
+    <img src="https://www.mapsofworld.com/style_2019/images/world-map.png?v:1" alt="world image"><BR>
+        <hr>
+    <b>THIS IS BOLD</b>
+    <br>
+    <i>THIS IS ITALIC</i> <BR>
+    <u>THIS IS UNDERLINE</u><br>
+    <big>THIS IS BIG TAG</big><BR>
+    <small>THIS IS SMALL TAG</small><BR>
+        <hr>
+     <p>Co<sub>2</sub>+O<sub>2</sub>&rarr;2CO</p>
+     <p>a<sup>2</sup>+bx +c</p>
+     <HR>
+     <p>HERE IS PYTHON CODE USING PRE TAG</p>
+     <pre>
+        # Function for nth Fibonacci number
+
+def Fibonacci(n):
+	if n<= 0:
+		print("Incorrect input")
+	# First Fibonacci number is 0
+	elif n == 1:
+		return 0
+	# Second Fibonacci number is 1
+	elif n == 2:
+		return 1
+	else:
+		return Fibonacci(n-1)+Fibonacci(n-2)
+
+# Driver Program
+
+print(Fibonacci(10))     </pre>
+<hr>
+</body>
+</html>
