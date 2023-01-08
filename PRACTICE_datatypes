@@ -1,0 +1,13 @@
+var abc, efg, hij;
+abc=23;
+efg=89.547776;
+hij="string affejkfbjksdbfkjdbskfffsbsk";
+console.log(abc);
+console.log(efg);
+console.log(hij);
+let k=21/7;
+console.log(k);
+let m=5;
+console.log(m*=m);
+let j="I\'m the person having the great  \" WINGS OF FIRE \" ";
+console.log(j);
