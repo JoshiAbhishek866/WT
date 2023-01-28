@@ -1,24 +1,73 @@
-var r="Catherine, empress of "; //global
-let k=10; //local var
-const pi= 3.14 ;//const
-k=r //any local or global var can be change 
-console.log(r,k,pi);
+var r = "Catherine, empress of "; //global
+let k = 10; //local var
+const pi = 3.14; //const
+k = r; //any local or global var can be change
+console.log(r, k, pi);
 //pi=0//thus const is unchanged
 //console.log(r,k,pi);
-var l="ussr";
-console.log(r+" "+l);
-let m=10; //local var
-m*=41;
-console.log(m)
-let a=`earth is \" located \" near \' mars`;
-console.log(a)
-a="first";
-let b=r+"the great " +a+" "+l;
+var l = "ussr";
+console.log(r + " " + l);
+let m = 10; //local var
+m *= 41;
+console.log(m);
+let a = `earth is \" located \" near \' mars`;
+console.log(a);
+a = "first";
+let b = r + "the great " + a + " " + l;
 console.log(b.length);
+let a11 = "mother";
+let a12 = "india";
+a11 += a12;
+console.log(a11 + " hola " + l);
+let m1 = "jello world";
+console.log(m1[0]);
+m1[0] = "k";
+console.log(m1[0]); //thus string are immutable it cant be changed , so changing an index is not option any more
 
+//function calling
+function fun(a1, a2, a3) {
+  let var1 = a1 + a2 + a3;
+  return var1;
+}
+console.log(fun("kem", "cho ? ", "majama....."));
 
+//nested array
+let arr1 = [
+  ["bulls", 12],
+  ["is white", 10100]
+];
+console.log(arr1);
 
+var arr2 = [12, 13, 14];
+arr2[0] = 56;
+console.log(arr2); //thus arrays can be changed and are mutable
+let m13 = arr2.shift();
+console.log(arr2); //thus 1st array element can be removed
+var m12 = arr2.pop();
+console.log(arr2); //thus array elemrnts can poped up
+let m14 = arr2.unshift("o hello");
+console.log(arr2); // to pop 1st element is unshift
+let m15 = [1, 234, "o hello"];
+m15.push(["arunachal", "pradesh"]);
+console.log(m15); //
+let m16 = [12, 15, [13, 24, [14, 25, [15, 16]]]];
+let m17 = m16[2][2][2][0];
+console.log(m17); //
 
-
-
-
+//function
+function f1() {
+  console.log("ocean");
+}
+for (let i = 0; i < 2; i++) {
+  f1(); //fun call
+}
+var a1 = 12;
+function f2() {
+  let a2 = 19;
+}
+function f3() {
+  a1++;
+  console.log(a1);
+  a2++;
+  console.log(a2);
+}
