@@ -23,21 +23,18 @@ let m1 = "jello world";
 console.log(m1[0]);
 m1[0] = "k";
 console.log(m1[0]); //thus string are immutable it cant be changed , so changing an index is not option any more
-
 //function calling
 function fun(a1, a2, a3) {
   let var1 = a1 + a2 + a3;
   return var1;
 }
 console.log(fun("kem", "cho ? ", "majama....."));
-
 //nested array
 let arr1 = [
   ["bulls", 12],
   ["is white", 10100]
 ];
 console.log(arr1);
-
 var arr2 = [12, 13, 14];
 arr2[0] = 56;
 console.log(arr2); //thus arrays can be changed and are mutable
@@ -53,7 +50,6 @@ console.log(m15); //
 let m16 = [12, 15, [13, 24, [14, 25, [15, 16]]]];
 let m17 = m16[2][2][2][0];
 console.log(m17); //
-
 //function
 function f1() {
   console.log("ocean");
@@ -63,11 +59,28 @@ for (let i = 0; i < 2; i++) {
 }
 var a1 = 12;
 function f2() {
-  let a2 = 19;
+  let a2 = 19; //by let keyword the var becomes global
 }
 function f3() {
   a1++;
   console.log(a1);
-  a2++;
-  console.log(a2);
+  //a2++;  thus a2 is local var
+  //console.log(a2); thus let is for local and var is fpr global
 }
+f3();
+// local over global
+let q = 12;
+function myfun() {
+  var q = 4;
+  return q;
+}
+console.log(myfun());
+console.log(q);                  //NOTE- if we dont specify return of function undefined is returned
+
+function i(arr,item)
+{
+  return arr.push(item);
+}
+var k11=[1,2,3,4,5];
+i(k11,8);
+console.log(k11);
