@@ -84,3 +84,62 @@ function i(arr,item)
 var k11=[1,2,3,4,5];
 i(k11,8);
 console.log(k11);
+function comp(a, b) {
+  if (a === b) return "equal";
+  return "unequal";
+}
+console.log(comp(2, "2"));
+
+/*if 3==3 it is true
+if 3=='3' then true                   by using strict equality operator
+BUT
+if 3===3 then its true
+if 3==='3' is false statement         by using strict equality operator
+*/
+const obj1234 = {
+  a: "apple",
+  b: 52,
+  c: "cat"
+};
+delete obj1234.a;
+/*thus an object format canbe represented as 
+         {
+              "key":"value",
+               "key":"value",
+              "alpha" : ["pearl","harbour"], // in js we use [ ]notation for array 
+                               
+             "beta" :                                                    //for array of object 
+             [
+                {
+                   "a1":1,
+                   "b1":"abcd",
+                   "c1":["a","b","c"],
+                }
+                {
+                   "a2":2,
+                   "b2":"efgh",
+                   "c1":["e","f","g"],
+                }
+             ]
+             //and if we make whole js object into string json.parse() function is used to make whole string into 
+             object the object back.
+             
+             //A common use of JSON is to exchange data to/from a web server. When receiving data from a web server, the data is always a string. Parse the data with JSON.parse() , 
+             and the data becomes a JavaScript object.
+             for example
+             `[
+                {
+                   "a1":1,
+                   "b1":"abcd",
+                   "c1":["a","b","c"],
+                }
+                {
+                   "a2":2,
+                   "b2":"efgh",
+                   "c1":["e","f","g"],
+                }
+             ]`   this bentick symbol makes whole obj in array 
+             
+
+         }
+ */
