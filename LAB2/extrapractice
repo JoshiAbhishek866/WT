@@ -143,3 +143,86 @@ delete obj1234.a;
 
          }
  */
+//for nested obj
+var mystor = {
+  cycle: {
+    seat: 1,
+    wheel: "two"
+  },
+  car: {
+    "passenger seat": "six"
+  }
+};
+var box = mystor.car["passenger seat"];
+console.log(box);
+
+var myplant = [
+  {
+    type: "flower",
+    list: ["marigold", "jasmine", "lotus"]
+  },
+  {
+    type: "tree",
+    list: ["juniper", "oak", "banyan"]
+  }
+];
+var sectree = myplant[1].list[1];
+console.log(sectree); //accesing nested array
+
+var copymyplant = JSON.parse(JSON.stringify(myplant)); //to keep copy of the object myplant this syntax is used in js
+var arr = [];
+for (var i = 0; i < 10; i++) {
+  //loop in js
+  arr.push(i);
+}
+console.log(arr);
+
+function mul(arr1) {
+  var p = 1;
+  for (var i = 0; i < arr1.length; i++) {
+    for (var j = 0; j < arr1[i].length; j++) {
+      p *= arr1[i][j];
+    }
+  }
+  return p;
+}
+var p1 = mul([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7]
+]);
+console.log(p1);
+
+function fun1(str) {
+  return parseInt(str);
+}
+console.log(fun1("52")); //parseInt converts string to integer
+function check(n) {
+  return n > 0 ? "positive" : n < 0 ? "negative" : "zero";
+} // in js too ternary is condition ? true : false;
+console.log(check(52));
+/* with var keyword we can have 2 variable with same name but its not possible with let keyword 
+thus var k="a";
+     var k="b";    is true
+ But 
+ let k="a";
+     k="b";  is absolutely WRONG
+*/
+let k1234 = "hello";
+k1234 = "key"; //still if a variable is declared with let than it can be updated this way
+
+/*2) var vs let is
+  var can be global or local both 
+  but let can only have scope under curely braces,{}, so it can be only local variable
+*/
+/*
+const has all properties like let but can only be "read" , not modified once assigned;
+*/
+const s = [2, 3, 4];
+function edit() {
+  s[0] = 1; // it is ILLEGAL to reassign const array like s=[1,2,3]
+  s[1] = 5; //as it is not allowed to reassign in array but it is LEGAL to update array using indexs or bracket notation , [],
+  s[2] = 6;
+}
+edit();
+console.log(s);
