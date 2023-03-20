@@ -43,3 +43,7 @@ let production = () =>{
 
 // Trigger 👇
 order(0, production);
+//await is used as substitute of .then() function, it is aused under async func and async will always give promise object.
+//await fun will basically will wait till promise is executed 
+//1) async will return promise obj
+  //2) await will start run on background
