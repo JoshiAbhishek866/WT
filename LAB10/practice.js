@@ -47,3 +47,4 @@ order(0, production);
 //await fun will basically will wait till promise is executed 
 //1) async will return promise obj
   //2) await will start run on background
+  //3)another thread will work (eg main console instruction) 
