@@ -48,3 +48,4 @@ order(0, production);
 //1) async will return promise obj
   //2) await will start run on background
   //3)another thread will work (eg main console instruction) 
+  //(example of 3rd point is when a function passess a argument to another function , till that time the execution process is continued by executing other instructions like console.log statements)
